@@ -105,7 +105,7 @@ export default function SearchAppBar() {
                 }}
                 onClick={() => {}}
               >
-                (About Us)
+                ( About Us )
               </span>
             </div>
           </Typography>
