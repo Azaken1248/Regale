@@ -54,20 +54,23 @@ const ItemCard = ({ name, imgPath, price, images }: ItemCardProps) => {
         </div>
         <div className="info-div">
           <h1>{name}</h1>
-          <span>Rs. {price}</span>
-          <div className="quantity-controls">
-            <label htmlFor="quantity">Quantity:</label>
-            <input
-              type="number"
-              id="quantity"
-              value={quantity}
-              min="1"
-              onChange={handleQuantityChange}
-            />
+          <div className="info-funcs">
+            <button className="add-to-cart-button" onClick={addToCart}>
+              Add to Cart
+            </button>
+
+            <div className="quantity-controls">
+              <label htmlFor="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                value={quantity}
+                min="1"
+                onChange={handleQuantityChange}
+              />
+            </div>
+            <span>Rs. {price}</span>
           </div>
-          <button className="add-to-cart-button" onClick={addToCart}>
-            Add to Cart
-          </button>
         </div>
       </div>
 

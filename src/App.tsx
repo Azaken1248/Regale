@@ -1,10 +1,10 @@
 import { Outlet } from "react-router";
-import Navbar from "./components/Navbar";
+import SearchAppBar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <SearchAppBar />
       <Outlet />
     </>
   );
