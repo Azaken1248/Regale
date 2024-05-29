@@ -1,0 +1,124 @@
+.item-card {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin: 35%;
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: scale(1.1);
+}
+
+.img-div {
+    display: flex;
+    border-bottom: 3px solid black;
+    overflow: hidden;
+    width: fit-content;
+    height: 130%;
+    cursor: pointer;
+}
+
+.info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info-div span {
+    font-size: 25px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+}
+
+.add-to-cart-button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 80%;
+    height: 80%;
+    max-width: 800px; /* Maximum width of 800px */
+    max-height: 600px; /* Maximum height of 600px */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px); /* Adjusted height for buttons and padding */
+}
+
+.slideshow img {
+    max-width: 100%; /* Ensure the image fits the width of its container */
+    max-height: 100%; /* Ensure the image fits the height of its container */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.fb{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+}
+

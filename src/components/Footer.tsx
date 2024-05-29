@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div>
         <hr></hr>
-        <footer style={{ marginTop: "75%" }}>
+        <footer style={{ marginTop: "0%" }}>
           <div className="left-footer">
             <div className="left-footer-element">
               <h3>Company</h3>

@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import logo from "../assets/logo1.png";
+import { Link } from "react-router-dom";
 
 // Styled components
 const Search = styled("div")(({ theme }) => ({
@@ -81,21 +82,23 @@ export default function SearchAppBar() {
         <Toolbar>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <img
-                src={logo}
-                style={{
-                  opacity: isNavbarVisible ? 1 : 0.5,
-                  height: isNavbarVisible ? "2rem" : "6rem",
-                  transition:
-                    "height 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out, transform 0.3s ease-in-out",
-                  position: isNavbarVisible ? "static" : "fixed",
-                  top: isNavbarVisible ? "0" : "1rem",
-                  left: isNavbarVisible ? "0" : "50%",
-                  transform: isNavbarVisible ? "none" : "translateX(-50%)",
-                  zIndex: isNavbarVisible ? "0" : "10",
-                }}
-                alt="Logo"
-              />
+              <Link to="/Regale">
+                <img
+                  src={logo}
+                  style={{
+                    opacity: isNavbarVisible ? 1 : 0.5,
+                    height: isNavbarVisible ? "2rem" : "6rem",
+                    transition:
+                      "height 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out, transform 0.3s ease-in-out",
+                    position: isNavbarVisible ? "static" : "fixed",
+                    top: isNavbarVisible ? "0" : "1rem",
+                    left: isNavbarVisible ? "0" : "50%",
+                    transform: isNavbarVisible ? "none" : "translateX(-50%)",
+                    zIndex: isNavbarVisible ? "0" : "10",
+                  }}
+                  alt="Logo"
+                />
+              </Link>
               <span
                 className="about-nav"
                 style={{
@@ -105,7 +108,7 @@ export default function SearchAppBar() {
                 }}
                 onClick={() => {}}
               >
-                (About Us)
+                ( About Us )
               </span>
             </div>
           </Typography>
